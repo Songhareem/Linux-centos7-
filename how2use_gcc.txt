@@ -1,0 +1,9 @@
+
+
+1. Find where gcc there is
+
+   "witch gcc"
+
+2. For using gcc, command like "gcc -o program1 test.c"
+
+   Than run like this "./program1"

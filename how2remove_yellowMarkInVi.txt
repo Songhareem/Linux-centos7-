@@ -1,0 +1,7 @@
+
+
+ ":nohl"
+
+ Yellow mark is maden by searching work or sentence
+
+ Than, if you want to remove the mark,use ":nohl"

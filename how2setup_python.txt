@@ -1,0 +1,48 @@
+
+1. Check python version now
+
+   using "python" than come back shell using "exit()"
+
+2. Yum update
+
+   using "yum update"
+
+3. Config development environment(add wget)
+
+   using "yum groupinstall "Development Tools"
+
+4. Go to "www.python.org" and copy rink address
+
+   Download -> Source code -> Latest Python 3 Release - Python VERSION -> Gzipped source tarball rink copy
+
+5. Python download
+
+   move or make folder for setup python
+
+   using "wget https://www.python.org/ftp/python/3.6.2/Python-3.6.2.tgz(copyed rink example)"
+
+   Than depress "tar xvfz Python-3.6.2.tgz(output example)"
+
+6. Python install
+
+   move 'Python-3.6.2' directory
+
+   command "./configure"
+
+   Than "make"
+
+7. For using Python 3, make simbolic link
+
+   python install folder : /home/song/Python-3.6.2
+
+   make new folder 'bin' : /home/song/bin
+
+   make new simbolic link : ln -s /home/song/Python-3.6.2/python /home/song/bin/python3
+
+8. If typing "python",run python 2.7.5
+
+   If typing "python3", run python 3.6.2
+
+   Can use each other
+
+   

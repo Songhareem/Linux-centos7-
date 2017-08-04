@@ -1,0 +1,7 @@
+
+
+1. "rpm -qa *release" comand show version of OS
+
+2. "getconf LONG_BIT" comand show OS's bit(32 or 64)
+
+ 

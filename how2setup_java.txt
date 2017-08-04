@@ -1,0 +1,63 @@
+
+1. First, check java version at now
+
+   using "java -version"
+
+2. If there is, check java setup Info
+
+   using "rpm -qa |grep java"
+
+3. remove OpenJDK java ver for setup formal OracleJDK
+
+   using "yum remove javaVERSION"
+
+4. If done removing, check OS version
+
+   using "rpm -qa *release" and "getconf LONG_BIT"
+
+5. Download LinuxJDK by Oracle
+
+   file ex) jdk ~ .rpm
+
+6. Move dir where have jdk ~.rpm
+
+7. Install JDK
+
+   using "rpm -ivh jdk-8u144-linux-x64.rpm"
+
+8. Regist environment var
+
+   using "export JAVA_HOME=/usr/java/jdk1.8.0_144/"
+	 "export PATH=$PATH:$JAVA_HOME"
+
+9. Check env var
+
+   using "echo $JAVA_HOME"
+	 "echo $PATH"
+
+10.For doesn't initialize these setting, make shellscript file
+
+   using "vi /etc/profile.d/java.sh"(need root)
+
+   ----------------------------------
+   java.sh
+
+   #!/bin/bash
+   JAVA_HOME=/usr/java/jdk1.8.0_65/
+   PATH=$JAVA_HOME/bin:$PATH
+   export PATH JAVA_HOME
+   export CLASSPATH=.
+
+   ----------------------------------
+
+11.Change authorlty
+
+   using"chmod +x /etc/profile.d/java.sh
+
+12.Add environment var
+
+   using "source /etc/profile.d/java.sh"
+
+ 
+
+
