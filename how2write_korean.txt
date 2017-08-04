@@ -1,0 +1,12 @@
+
+1. program tap -> system tool -> set up -> region and language
+
+2. see input source, remove korean already setted
+
+3. click plus(+) button,find korean in list
+
+4. click korean, than can see some of korean
+
+5. select korean(hangul)
+
+6. done.
