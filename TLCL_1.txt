@@ -1,0 +1,31 @@
+
+command : date - to display the current time and date.
+result : 2018. 09. 03. (월) 23:35:40 KST
+
+command : cal - to display a calendar of the current month.
+result : 9월 2018      
+일 월 화 수 목 금 토
+                   1
+ 2  3  4  5  6  7  8
+ 9 10 11 12 13 14 15
+16 17 18 19 20 21 22
+23 24 25 26 27 28 29
+30
+
+command : df - to see the current amount of free space on your disk drives.
+result :Filesystem          1K-blocks    Used Available Use% Mounted on
+/dev/mapper/cl-root  52403200 8147044  44256156  16% /
+devtmpfs              3979500       0   3979500   0% /dev
+tmpfs                 3995476   32636   3962840   1% /dev/shm
+tmpfs                 3995476    9208   3986268   1% /run
+tmpfs                 3995476       0   3995476   0% /sys/fs/cgroup
+/dev/sda1             1038336  410424    627912  40% /boot
+/dev/mapper/cl-home  63260488 3937332  59323156   7% /home
+tmpfs                  799096      32    799064   1% /run/user/1000
+
+command : free - to display the amount of free memory
+result :               total        used        free      shared  buff/cache   available
+Mem:        7990952     1306764     4713504       87656     1970684     6280212
+Swap:             0           0           0
+
+command : exit - to close the terminal
