@@ -1,0 +1,77 @@
+
+0. ref
+https://opentutorials.org/module/1701/10229
+
+1. install
+
+yum -y install http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm
+ 
+yum -y install mysql-community-server
+ 
+systemctl start mysqld
+ 
+systemctl enable mysqld
+
+
+2. check
+
+can use mysql command?
+
+right result
+-> mysql>
+
+if it work, use 'quit'command for out
+Than reboot(using 'reboot'command or just do, both of these is ok)
+
+
+3. set up mysql(characterset )
+
+mysql> status
+
+Than you can see characterset = latin1
+
+Let's change it to utf8
+
+cd etc
+
+vim my.cnf
+
+Compare with under lists, add or let it be
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+/etc/my.cnf
+
+[client] 
+default-character-set = utf8
+ 
+[mysql]
+default-character-set=utf8
+ 
+[mysqld]
+ 
+datadir=/var/lib/mysql
+socket=/var/lib/mysql/mysql.sock
+ 
+character-set-server=utf8
+collation-server=utf8_general_ci
+init_connect=SET collation_connection = utf8_general_ci
+init_connect=SET NAMES utf8
+ 
+character-set-client-handshake = FALSE
+skip-character-set-client-handshake
+ 
+[mysqldump]
+default-character-set=utf8
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ 
+
+if you done,save and  restart mysql
+
+systemctl restart mysqld
+
+
+4. check utf8
+
+mysql> status
+
+check utf8 instead of latin1
+
+
